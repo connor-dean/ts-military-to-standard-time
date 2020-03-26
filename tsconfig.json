@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+      "module": "commonjs",
+      "target": "es5",
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "noEmitHelpers": true,
+      "noEmitOnError": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "strictNullChecks": true,
+      "declaration": true,
+      "outDir": "./lib",
+      "strict": true,
+      "lib": [
+          "es6",
+          "dom",
+          "es2015.iterable"
+      ],
+      "baseUrl": ".",
+      "paths": {
+          "~/*": [
+              "src/*"
+          ],
+          "*": [
+              "./node_modules/*"
+          ]
+      }
+  },
+  "include": ["src"],
+  "exclude": [
+      "node_modules",
+      "platforms",
+      "**/__tests__/*"
+  ]
+}
