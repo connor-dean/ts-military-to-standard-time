@@ -1,4 +1,4 @@
-import convertMilitaryToStandardTime from '../convertMilitaryToStandardTime';
+import convertMilitaryToStandardTime from '../index';
 
 describe('convertMilitaryToStandardTime', () => {
   it('returns 12:00 AM when the military time is 0000', () => {
