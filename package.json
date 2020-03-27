@@ -1,7 +1,7 @@
 {
   "name": "ts-military-to-standard-time",
-  "version": "1.0.0",
-  "description": "A nice greeter",
+  "version": "1.0.1",
+  "description": "A small package that can help assist with converting a military time string to civilian time.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -12,17 +12,22 @@
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/connor-dean/ts-military-to-standard-time.git"
   },
-  "keywords": ["Military", "Standard", "Hours", "Conversion"],
+  "keywords": [
+    "Military",
+    "Standard",
+    "Hours",
+    "Conversion"
+  ],
   "author": "Connor Dean",
   "license": "ISC",
   "bugs": {
