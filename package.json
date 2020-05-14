@@ -1,6 +1,6 @@
 {
   "name": "ts-military-to-standard-time",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A small package that can help assist with converting a military time string to civilian time.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
