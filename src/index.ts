@@ -12,7 +12,7 @@ export default function convertMilitaryToStandardTime(militaryTime: string): str
   } else if (time >= BEGIN_MILITARY_AM_TIME && time <= END_MILITARY_AM_TIME) {
     const parsedHour = militaryTime.slice(0, 2) === '00' ? '12' : militaryTime.slice(0, 2);
     const parsedMinutes = militaryTime.slice(2, 4);
-    return parsedHour + ':' + parsedMinutes + ' AM';
+    return `${parsedHour}:${parsedMinutes} AM`;
   } else {
     const parsedHour = militaryTime.slice(0, 2);
     const pmHour: string =
@@ -20,6 +20,6 @@ export default function convertMilitaryToStandardTime(militaryTime: string): str
         ? parsedHour
         : (parseInt(parsedHour, BASE_TEN) - HOURS_IN_AFTERNOON).toString();
     const parsedMinutes = militaryTime.slice(2, 4);
-    return pmHour + ':' + parsedMinutes + ' PM';
+    return `${pmHour}:${parsedMinutes} PM`;
   }
 }
